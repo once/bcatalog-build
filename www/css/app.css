@@ -1,0 +1,756 @@
+
+
+ /* disable text selection for iOS webview*/
+ *:not(input):not(textarea) {
+   user-select: none;
+   -webkit-user-select: none; /* disable selection/Copy of UIWebView */
+   -webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
+   -moz-user-select: none;
+   -ms-user-select: none;
+
+  }   
+.navbar .center {
+
+    font-weight: normal !important;
+
+}
+
+.views {
+
+    overflow: hidden;
+}
+
+ 
+
+.font-bigger {
+    font-size: 1.2em;
+}
+
+.icon .badge {
+
+    font-family: sans-serif;
+}
+/* Left panel */
+
+
+/* Color styles */
+
+
+.layout-dark-srf .panel,
+.panel.layout-dark-srf {
+  background-color: #46494C;
+  color: #DCDCDD;
+}
+
+.layout-dark-srf .list-block ul,
+.list-block.layout-dark-srf ul {
+  background: #4C5C68;
+}
+
+html:not(.watch-active-state) .layout-dark-srf .item-link:active,
+html:not(.watch-active-state) .layout-dark-srf  label.label-checkbox:active,
+html:not(.watch-active-state) .layout-dark-srf  label.label-radio:active,
+.layout-dark-srf  .item-link.active-state,
+.layout-dark-srf  label.label-checkbox.active-state,
+.layout-dark-srf  label.label-radio.active-state {
+  background-color: #46494C;
+  
+  
+}
+
+.layout-dark-srf .list-block .item-inner:after {
+
+  background-color: #46494C;
+
+}
+
+.layout-dark-srf .list-block ul:before {
+
+  background-color: #C5C3C6;
+
+}
+.layout-dark-srf .list-block ul:after {
+
+  background-color: #46494C;
+
+}
+
+.panel-left .list-block .item-link .item-inner {
+
+    background: none;
+}
+
+.listpreloader {
+
+    display: none;
+
+}
+
+.list-button {
+
+    text-align: left !important;
+}
+
+/* Offer List styles */
+
+.no-searchdata-message {
+    text-align: center;
+    padding-top: 7em;
+    font-size: 1.25em;
+    color: gray;
+
+}
+.no-data-message {
+    /*text-align: center;*/
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.1em;
+    color: gray;
+
+}
+
+.no-data-message .filter-info {
+    font-size: .8em;
+    font-weight: bold;
+    color: black;
+}
+
+
+.offer-list.list-block ul {
+background-color: #EFEFF4;
+
+}
+
+.offer-list.list-block li:not(.item-divider) {
+background-color: #FFF;
+margin-bottom: 6px;
+padding-left: 3px;
+
+}
+.offer-list.list-block ul:after {
+height: 0;
+
+}
+
+.offer-list.list-block .item-content {
+
+        padding-left: 0;
+}
+
+.offer-list .list-block li.media-item .item-link .item-title-row, .list-block.media-list .item-link .item-title-row
+ {
+
+        background: none;
+        padding-right: 0;
+        padding-top: 5px;
+        white-space: normal;
+        font-size: .9em;
+        font-weight: bold;
+        line-height: 17px;
+
+
+}
+
+.offer-list .list-block li.media-item .item-media, .list-block.media-list .item-media {
+
+    padding-top: 0;
+    padding-bottom: 0;
+    width:90px;
+ height: 90px;
+}
+
+.offer-list .list-block li.media-item .item-inner, .list-block.media-list .item-inner {
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.offer-list.list-block .item-inner:after {
+height: 0;
+}
+
+
+.offer-list.list-block li.media-item .item-link .item-inner, .offer-list.list-block.media-list .item-link .item-inner {
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* Advertiser name */
+.offer-list.list-block .item-text{
+        
+    overflow: visible;
+    font-size: .65em;
+    text-transform: uppercase;
+    line-height: 14px;
+    padding-top: 10px;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 22px;
+    
+}
+
+.offer-advertiser-text {
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offer-percent-list {
+    font-size: .8em;
+    white-space: nowrap;
+    top: 0px;
+    padding: 2px 6px;    
+    
+}
+
+.offer-list.list-block.media-list .item-media img {
+ max-width:90px;
+ max-height: 90px;
+ margin: auto;
+}
+
+/* Foods List styles */
+
+.list-block .offer-time-text {
+    font-size: .88em;
+}
+
+.food-newprice-list {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: red;
+    margin-right: .4em;
+}
+
+ .food-oldprice-list {
+    font-size: .9em;
+    text-decoration: line-through;
+    color: gray;
+    margin-right: .4em;
+    
+}
+/*
+.food-percent-list {
+    font-size: .8em;
+    font-weight: bold;
+    background-color:  yellow;
+    
+    position: absolute;
+    margin-left: 10px;
+    top: 0px;
+    padding: 1px 10px;    
+    border-radius:7px;
+}*/
+
+.food-percent-list {
+    font-size: .8em;
+    white-space: nowrap;
+    position: absolute;
+    margin-left: 6px;
+    top: 0px;
+    padding: 2px 6px;    
+    
+}
+
+
+
+.food-currency-list {
+    font-size: .8em;
+}
+
+div.small-labels div.item-title {
+    
+    font-size: 16px;
+}
+.fa-correct {
+    
+    width: 20px;
+}
+
+.header-appname {
+    font-weight: bold;
+    color: white;
+    
+}
+
+.block-nospacebefore {
+    margin: 0;
+}
+
+.food-percent-page {
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color:  rgba(255, 255, 0, 0.57);
+    
+    
+    
+    padding: 3px 10px;    
+    border-radius:7px;
+}
+
+.food-newprice-page { 
+    font-size: 1.4em;
+    font-weight: bold;
+    color: red;
+    
+}
+
+ .food-oldprice-page {
+    font-size: 1.2em;
+    text-decoration: line-through;
+    color: gray;
+    
+}
+
+.food-currency-page {
+
+    font-size: .8em;
+}
+
+/* Offer page style */
+
+
+.srf-offer-main-image {
+	
+	max-width: 100%;
+	min-height: 42vh;
+    max-height: 42vh;
+    margin: auto;
+	
+}
+
+
+.srf-contact-block {
+    
+    margin: 12px 0;
+}
+
+.srf-contact-block p {
+    
+    margin: .1em 0;
+}
+
+.srf-offer-description {
+    
+    margin:-1px 0;
+    font-size: 1em;
+}
+
+p.srf-contact-block span.address {
+    
+    font-size: .98em;
+}
+
+p.srf-contact-block span.workhours {
+    
+    font-size: .94em;
+    color: gray;
+}
+p.srf-contact-block span.phone {
+    
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.offer-page-workhours {
+    font-size:.96em;
+    color: gray;
+    
+}
+
+.offer-page-linkitem {
+    display: block;
+    
+}
+
+.offer-page-linkitems {
+    line-height:2em;
+    margin-bottom: 1em;
+    
+}
+
+.phone {
+font-size: 1.42em;    
+}
+
+.event-time {
+    font-weight: bold;
+}
+
+.event-page-datetime {
+    font-weight: bold;
+    
+}
+.event-page-advertiser {
+    display:block;
+    font-weight: bold;
+    
+}
+
+
+.apptitle-prefix {
+    font-size: .8em;
+    
+}
+.apptitle {
+    font-weight: bold;
+    
+}
+.version {
+    
+    font-size: .85em;
+}
+
+div.item-search-keywords {
+    display: none;
+    
+}
+
+.legal-offer-notice {
+ font-size: .8em;   
+ color: darkgray;
+ display: block;
+}
+
+.legal-offer-notice-alco {
+
+    font-stretch: semi-condensed;
+    font-size: 5vw;
+    color: darkgray;
+    line-height: .9;
+    text-transform: uppercase;
+    
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.list-block .item-media+.item-inner {
+    margin-left: 13px;
+    padding-right: 5px;
+    
+}
+
+.pull-right {
+    float: right;
+}
+
+a.open-popup:active {
+    color: skyblue;
+    
+}
+
+.popup-closer {
+  
+   float: right; 
+   padding: 20px 15px 5px 40px; 
+    
+    
+}
+
+.select-category-label {
+  width: 50%; 
+  display: inline-block;
+  font-weight: bold; 
+  padding: 20px 0px 5px 20px;  
+    
+} 
+
+.srf-offer-swiper-container {
+	display: flex;
+    
+    min-height: 42vh;
+    max-height: 42vh;
+	
+}
+
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: none;
+  border:1px solid #aaa;
+  border-radius: 0 0 0 0;
+  opacity:1;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background: white;
+  border-color: white;
+}  
+
+/* Food Offer page */
+.srf-food-offer-main-image-container {
+	display: flex;
+    min-height: 42vh;
+    max-height: 42vh;
+	
+}
+
+.srf-food-offer-main-image {
+	
+	margin: auto;
+    max-height: 42vh;
+    max-width: 100%;
+	
+}
+
+
+/* preloader*/
+.col-25 {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:auto;
+}
+
+.external-iframe{
+    
+    display:none;
+    
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+
+/* Priority offers */
+
+/* Standard */
+.pr-std .offer-percent-list {
+    
+    background-color :#EDEBAE;
+    font-weight: normal;
+    
+}
+
+.pr-std .item-title-row {
+    font-weight: normal !important;
+
+}
+
+/* Prioritized */
+.pr-pri {
+
+border-right: 4px solid coral;
+}
+
+.pr-pri .offer-percent-list {
+
+    background-color :coral;
+    color: white;
+
+    font-weight: normal;
+    font-size:.9em;
+}
+
+/* Top */
+.pr-top {
+
+    border-right: 4px solid coral;
+
+}
+.pr-top .offer-percent-list {
+    background-color :coral;
+    color: white;
+
+    font-weight: normal;
+    font-size:.9em;
+}
+
+.offer-exclusive {
+    margin-left: 3px;
+    color: white;
+    background-color: #778899;
+    padding: 2px 6px;
+    font-size: .8em;
+}
+    
+    .notification-description {
+        font-size: .9em;
+        padding: 20px;
+        display: inline-block;
+
+    }
+
+    .food-advertiser-logo {
+
+        max-width: 80px;
+    }
+
+/* Favourites list*/
+.offer-expired-info {
+    font-size: 13px;
+    color: gray;
+}
+
+.offer-expired-advertiser.item-text {
+    
+    color: lightgray;
+}
+
+.offer-expired-title.item-title-row {
+    
+    color: lightgray;
+}
+
+div.horizontal-selector {
+
+    
+    background-color: white;
+    padding: 5px 5px 5px;
+    /*margin-bottom: 3px;*/
+    display: none;
+    top: 88px;
+    left:0px;
+    z-index: 50;
+    position: absolute;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    height: 44px;
+
+}
+
+
+div.horizontal-selector .button {
+    display: inline-block;
+
+}
+
+
+.button.button-semi-big {
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.horizontal-selector .button i.f7-icons {
+    line-height: inherit;
+}
+
+.welcomescreen-heading {
+    font-size: 1.3em;
+
+}
+
+
+i.size-big-welcomescreen {
+
+    font-size: 12em;
+}
+
+.welcomescreen-picture img {
+    max-height: 260px;
+    max-width: 260px;
+}
+
+.crossed-out .item-media {
+
+    filter: grayscale(100%) opacity(40%);  /* Current draft standard */
+    -webkit-filter: grayscale(100%) opacity(40%); /* New WebKit */
+    -moz-filter: grayscale(100%) opacity(40%); 
+    -ms-filter: grayscale(100%) opacity(40%);  
+    -o-filter: grayscale(100%) opacity(40%);  /* Not yet supported in Gecko, Opera or IE */ 
+    filter: gray opacity(40%);  /* IE */
+    -webkit-filter: grayscale(1) opacity(40%); /* Old WebKit */
+
+}
+.crossed-out .item-inner {
+
+    text-decoration: line-through;
+    color: gray;
+
+}
+
+.crossed-out .item-title {
+
+    text-decoration: line-through;
+    color: gray;
+
+}
+
+.crossed-out .item-inner .food-newprice-list {
+    
+    color: gray;
+    font-weight: normal;
+
+}
+
+
+.list-block .swipeout-actions-right a.padding-10 {
+
+    padding: 0 10px;
+}
+
+
+.list-block .swipeout-actions-right a.padding-60-10 {
+
+    padding: 60px 10px;
+}
+
+
+a.swipe-action-multiline {
+    display: block !important;
+}
+
+a.swipe-action-multiline .swipe-action-header {
+    font-size: .9em;
+    margin-top : 3px;
+    padding-left: 21px;
+
+}
+
+a.swipe-action-multiline .swipe-action-bottom {
+    font-size: .7em;
+    padding-left: 22px;
+    margin-top: 2px;
+    
+
+}
+
+a.swipe-action-multiline .swipe-action-buttons {
+    margin-top : 5px;
+
+}
+
+.f7-icons.size-34 {
+
+    font-size: 34px;
+}
+
+.toolbar-inner .center {
+    margin: 0 auto;
+    
+}
+
+.toolbar-inner .center.small{
+    
+    font-size: .8em;
+}
+.toolbar-inner .center .quantity {
+   
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.offer-item-toolbar {
+
+    display: none;
+}
+
+.offer-item-toolbar {
+    color: white;
+    background-color:  #007aff;
+}
+.offer-item-toolbar a {
+    color: white;
+}

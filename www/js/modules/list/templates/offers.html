@@ -1,0 +1,27 @@
+<li class="swipeout {{pr_class}}" data-id="{{id}}" data-index="{{@index}}">
+                <div class="swipeout-content">
+                                     <a href="offer_item.html?type=offers&id={{id}}" class="item-link item-content">
+                                    <div class="item-media"><img class="srf-offerlist-image lazy lazy-fadein" data-src="{{img}}" >
+                                    </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                {{name}}
+                                            </div>
+                                            <div class="item-subtitle">                
+                                                {{#if discount_size}}<span class="offer-percent-list">{{discount_size}}</span>{{/if}}                                
+                                                {{#js_compare "this.exclusive != 0"}}<span class="offer-exclusive">Exclusive</span>{{/js_compare}}
+                                            </div>
+                                            <div class="item-text">
+                                                {{advertiser}}
+                                            </div>
+                                    </div>
+                                </a>
+                </div>
+                <div class="swipeout-actions-right">
+                    {{#if isFavourite}}
+                    <a class="bg-green remove-from-favourites" href="#"><i class="f7-icons size-22">check</i>&nbsp;In favourites</a>
+                    {{else}}
+                    <a class="bg-blue add-to-favourites" href="#">To favourites</a>
+                    {{/if}}
+                </div>
+            </li>

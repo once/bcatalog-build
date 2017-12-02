@@ -1,0 +1,9 @@
+{{#if renderBackButton}}
+    <a href="#" id="hs-back" class="button button-round button-semi-big">
+        <i class="f7-icons size-22">arrow_left</i>
+    </a>
+{{/if}}
+{{#each items}}
+    <a href="#" data-id="{{id}}" data-name="{{name}}" class="button button-round button-semi-big hs-item">{{name}}</a>
+{{/each}}
+

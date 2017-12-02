@@ -1,0 +1,94 @@
+Foods:
+========================
+id
+name
+metakeywords
+img
+price_old
+price_new
+discount_size
+order_category
+order_section
+advertiser
+advertiser_id
+offer_cat_id AS category
+pr_cat
+exclusive
+system_date_from
+system_date_to
+modify_date  
+
+Offers:
+========================
+id
+name
+metakeywords
+order_category
+order_section
+event_datetime
+ext_link
+offer_cat_id AS category,
+img
+discount_size
+advertiser
+pr_cat
+exclusive
+system_date_to
+modify_date 
+
+
+Categories:
+========================
+id
+name
+icon
+section_id
+disp_order
+parent_id
+
+Offer Item:
+========================
+oc.name as cat_name
+c.name as sec_name
+c.id_name as sec_system_name (offers, foods etc.)
+offer_cat_id as category
+id
+advertiser_id
+body
+name
+img1
+img2
+img3
+img4
+img5
+event_datetime
+add_info
+discount_size
+advertiser
+a.email
+a.weblink1
+a.weblink2
+can_complain 
+system_date_to
+
+Food_item:
+========================
+cat_name
+sec_name
+c.id_name as sec_system_name (offers, foods etc.)
+id
+advertiser_id
+body
+name
+img
+img1
+system_date_from
+system_date_to
+price_old
+price_new
+discount_size
+add_info
+can_complain
+offer_cat_id as category
+advertiser
+

@@ -1,0 +1,13 @@
+
+module.exports = {"offers": [{"id":"981","name":"Fitness club discounts","metakeywords":"Fitness sport activities games","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"151","img":"img/demo/fitness_logo1.jpg","discount_size":"10%","advertiser":"FitnessWorld","pr_cat":"3","exclusive":"0","system_date_to":null,"modify_date":"1483013163"},
+{"id":"982","name":"Clothes for kids","metakeywords":"Clothes kids children wear","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"111","img":"img/demo/clothes_logo1.jpg","discount_size":"15%","advertiser":"Kidzone","pr_cat":"3","exclusive":"0","system_date_to":null,"modify_date":"1483013161"},
+{"id":"983","name":"Repair your auto with discount!","metakeywords":"Car automobile","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"161","img":"img/demo/auto_logo1.png","discount_size":"25%","advertiser":"MegaAuto","pr_cat":"3","exclusive":"1","system_date_to":null,"modify_date":"1483013161"},
+{"id":"984","name":"Care for your pet","metakeywords":"Dog cat veterinarian animals","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"131","img":"img/demo/vet_logo1.png","discount_size":"7%","advertiser":"Pet center Inc.","pr_cat":"1","exclusive":"0","system_date_to":null,"modify_date":"1483013161"},
+{"id":"985","name":"New Device for Lowest Price","metakeywords":"Electronics home","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"141","img":"img/demo/home_logo1.jpg","discount_size":"11%","advertiser":"Technomania","pr_cat":"1","exclusive":"0","system_date_to":null,"modify_date":"1483013161"},
+{"id":"986","name":"Cars! : new and used","metakeywords":"Car automobile","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"161","img":"img/demo/auto2_logo1.jpg","discount_size":"10%","advertiser":"CARSHOP","pr_cat":"1","exclusive":"0","system_date_to":null,"modify_date":"1483013161"},
+{"id":"987","name":"Trendy aroma for new season","metakeywords":"Perfumes fashion","order_category":"0","order_section":"0","event_datetime":null,"ext_link":null,"category":"121","img":"img/demo/perfume_logo1.jpg","discount_size":"3%","advertiser":"Aroma world","pr_cat":"1","exclusive":"0","system_date_to":null,"modify_date":"1483013161"},
+],
+
+"prior_categories":[{"id":"1","name":"Standard","disp_order":"3","class":"pr-std"},
+{"id":"2","name":"Priority","disp_order":"2","class":"pr-pri"},
+{"id":"3","name":"Top","disp_order":"1","class":"pr-top"}]};

@@ -1,0 +1,48 @@
+<div class="content-block srf-offer-description">
+         <div class="content-block-inner">
+          <div class="srf-food-offer-main-image-container">
+              <img class="srf-food-offer-main-image" src="{{img1}}" alt="{{name}}">
+        </div>
+          <div class="food-offer-priceblock">
+          <p> <b>{{js "this.advertiser.toUpperCase()"}}</b>. Sale from {{rusdate system_date_from}} to {{rusdate system_date_to}}</p>
+           <p>
+           
+           {{#js_compare "this.price_old > 0"}}
+                <span class="food-oldprice-page">{{price_old}} <i class="icon-rouble food-currency-page"></i></span>
+           {{/js_compare}}
+           
+           {{#js_compare "this.price_new > 0"}}
+                <span class="food-newprice-page">{{price_new}} <i class="icon-rouble food-currency-page"></i></span>
+           {{/js_compare}}
+            
+           {{#js_compare "(this.discount_size !='') && (this.discount_size != null)"}}
+               <span class="food-percent-page">{{discount_size}}</span>                                                        
+            {{/js_compare}}
+
+           </p>
+           </div>
+                                
+       <p>{{body}}</p>
+            
+    <span class="legal-offer-notice">{{add_info}}</span> 
+            {{#js_compare "this.can_complain > 0"}}
+                <p><a href="complain.html" id="btn-complain" class="button button-big color-red"><i class="icon-exclamation-circle"></i>&nbsp;&nbsp;Report a problem</a></p>
+           {{/js_compare}}
+          
+      </div>
+    <p><b>Contact information</b></p>
+   <ul>
+       
+   {{#each address_info}}
+    
+       <li><span class="address">{{address}}</span><span class="workhours"> (Work hours: {{workhours}})</span></li>
+    {{/each}}   
+    
+       </ul>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+    </div>
+   

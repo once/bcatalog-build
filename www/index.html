@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="Content-Security-Policy" content="default-src * https://codepush.azurewebsites.net 'self' ws: data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+                    <meta name="apple-mobile-web-app-capable" content="yes">
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                    <link rel="stylesheet" href="lib/css/framework7.ios.min.css">
+                    <link rel="stylesheet" href="lib/css/framework7.ios.colors.min.css">
+                    <link rel="stylesheet" href="lib/css/welcomescreen.css">
+                    <link rel="stylesheet" href="iconfont/style.css">
+                    <link rel="stylesheet" href="iconfont/framework7-icons.css">
+                    <link rel="stylesheet" href="css/app.css">
+                    <title></title>
+                </head>
+<body>
+    
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    
+    <div class="panel panel-left panel-reveal layout-dark-srf">
+        <div class="content-block-title"><span class="header-appname"></span></div>
+        <div class="list-block"><!-- rendered by renderLeftNav() --></div>
+    </div>
+
+    <div class="popup popup-vertical-selector tablet-fullscreen">
+        <!-- rendered by verticalSelectorController  -->
+    </div>
+  
+    <!-- Views-->
+    <div class="views">
+        
+        <div class="view view-main">
+             <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only open-panel"> <i class="f7-icons">bars</i></a>
+                    </div>
+                    <div class="center link">
+                    </div>
+                    
+                </div>
+            </div>
+          
+           
+              
+
+            <div class="pages navbar-through">
+
+                <div data-page="index" class="page" >
+
+                                            <form class="searchbar">
+                                                <div class="searchbar-input">
+                                                    <input type="search" placeholder="Search...">
+                                                    <a href="#" class="searchbar-clear"></a>
+                                                </div>
+                                                <a href="#" class="searchbar-cancel">Cancel</a>
+                                            </form>
+
+                                            <div class="searchbar-overlay"></div>
+
+                                            <div class="page-content itemlist pull-to-refresh-content">
+
+                                                <div class="pull-to-refresh-layer">
+                                                    <div class="preloader"></div>
+                                                    <div class="pull-to-refresh-arrow"></div>
+                                                </div>
+                                            
+                                                <div class="content-block searchbar-not-found no-searchdata-message">
+                                                    No matching results<br/>
+                                                    Please try searching with different crieteria
+                                                    
+                                                </div>
+                                                <div class="popup popup-site">
+                                                    <div class="popup-body">
+                                                        </div>
+                                                </div>
+                                                <div class="content-block row listpreloader" style="margin-top: 170px;">
+                                                    <div class="col-25">
+                                                        
+                                                        <span class="preloader"></span>
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="offer-list list-block virtual-list block-nospacebefore media-list list-block-search search-offers searchbar-found" >
+                                                    <!-- rendered by updateOffers()-->
+                                                </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          
+    <script type="text/javascript" src="cordova.js"></script>
+    
+    <!--<script type="text/javascript" src="lib/js/framework7.min.js"></script>--><!-- Warning, a customized version of framework7.js is used! See below:  -->
+    <script type="text/javascript" src="lib/js/framework7_customized15.js"></script>
+
+    <script type="text/javascript" src="lib/js/welcomescreen.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+    <script>
+        srf_app.appMain.initialize(); // srf_app - is exported as standalone by browserify
+
+    </script>
+  
+    
+</body>
+
+</html>

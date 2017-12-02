@@ -1,0 +1,31 @@
+<li class="swipeout {{#if expired}}{{else}}{{pr_class}}{{/if}}">
+                <div class="swipeout-content">
+                                     {{#if expired}}
+                                     <a data-id="{{id}}" data-index="{{@index}}" href="#" class="item-link item-content expired">
+                                     {{else}}
+                                     <a href="offer_item.html?type=offers&id={{id}}" class="item-link item-content">
+                                     {{/if}}
+                                    <div class="item-media"><img class="srf-offerlist-image lazy lazy-fadein" data-src="{{img}}" >
+                                    </div>
+                                        <div class="item-inner">
+                                            <div class="{{#if expired}}offer-expired-title{{/if}} item-title-row">
+                                                {{name}}
+                                            </div>
+                                            <div class="item-subtitle">
+                                             {{#if expired}}
+                                                <span class="offer-expired-info">Offer expired</span>
+                                                {{else}}
+                                                {{#if discount_size}}<span class="offer-percent-list">{{discount_size}}</span>{{/if}}
+                                                {{#js_compare "this.exclusive != 0"}}<span class="offer-exclusive">Exclusive</span>{{/js_compare}}
+                                                {{/if}}
+                                        </div>
+                                            <div class="{{#if expired}}offer-expired-advertiser{{/if}} item-text">
+                                                {{advertiser}}
+                                            </div>
+                                    </div>
+                                </a>
+                </div>
+                <div class="swipeout-actions-right">
+                    <a class="bg-red remove-from-favs" data-id="{{id}}" data-index="{{@index}}" href="#">Remove from<br/>favourites</a>
+                </div>
+            </li>

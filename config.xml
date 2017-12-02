@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0" 
+		xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+		id        = "com.srf.tester"
+		version   = "4.0">
+		
+    <name>ProductCatalog</name>
+    <description>
+        Product catalog description
+    </description>
+    <author href="http://yoursite.com" email="support@yoursite.com">
+        My team name
+    </author>
+
+	<content src="start.html"></content>
+   
+    <preference name="permissions"                value="none"/>
+    <preference name="orientation"                value="portrait" />
+    <preference name="target-device"              value="universal" />
+    <preference name="fullscreen"                 value="false" />
+    <preference name="webviewbounce"              value="false" />
+    <preference name="prerendered-icon"           value="false" />
+    <preference name="stay-in-webview"            value="true" />
+    <preference name="ios-statusbarstyle"         value="black-opaque" />
+    <preference name="detect-data-types"          value="true" />
+    <preference name="exit-on-suspend"            value="false" />       
+    <preference name="disable-cursor"             value="false" />
+    <preference name="android-installLocation"    value="auto" />
+	<preference name="phonegap-version" value="cli-6.5.0" />
+	<preference name="loadUrlTimeoutValue" value="200000" />
+	<preference name="AutoHideSplashScreen" value="false" />
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="AndroidLaunchMode" value="singleInstance" />
+	<preference name="SplashMaintainAspectRatio" value="true" />
+	<preference name="android-minSdkVersion" value="16" />  <!-- API Level 16 - Android 4.1 JELLY_BEAN,  API Level 19 - starts from Android 4.4 KitKat -->
+
+	<!-- STAGING :<preference name="CodePushDeploymentKey" value="{{{CODEPUSH_KEY_STAGING}}}" />-->
+	<!-- PRODUCTION : --><preference name="CodePushDeploymentKey" value="08u_itPsDn0J_frS3-OOOxNQvguFNyj5e7iEG" />
+
+	<plugin name="cordova-plugin-whitelist" version="1.3.2" source="npm" />
+	<plugin name="onesignal-cordova-plugin" spec="2.0.11" source="npm" />
+	<plugin name="cordova-plugin-themeablebrowser" spec="0.2.17" source="npm" />
+	<plugin name="cordova-plugin-google-analytics" spec="1.7.2" source="npm" />
+	<plugin name="cordova-plugin-device" spec="1.1.3" source="npm" />
+	<plugin name="cordova-plugin-x-socialsharing" spec="5.1.6" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" spec="4.0.0" source="npm" />
+	<!--<plugin name="cordova-plugin-code-push" spec="1.9.3-beta" source="npm" />	-->
+    <plugin name="cordova-plugin-admobpro" spec="2.28.3" source="npm" />
+
+    <plugin name="branch-cordova-sdk" spec="2.4.9" source="npm">
+        <variable name="BRANCH_KEY" value="key_live_ioFmFxfNBJVC24mYr1vuOebeEtiuWGcu" />
+        <variable name="URI_SCHEME" value="srf-tester" />
+    </plugin>
+    <branch-config>
+        <branch-key value="key_live_ioFmFxfNBJVC24mYr1vuOebeEtiuWGcu" />
+        <uri-scheme value="srf-tester" />
+        <link-domain value="qfhz.app.link" />
+        <ios-team-id value="475QKZCKPS" />
+        <ios-team-release value="475QKZCKPS" />
+    </branch-config>
+
+     
+    <icon src="res/icon.png"/>
+    <splash src="res/splash.png" />
+
+    <platform name="android">
+        <icon src="res/icon/android/drawable-ldpi-icon.png" platform="android" density="ldpi" />
+        <icon src="res/icon/android/drawable-mdpi-icon.png" platform="android" density="mdpi" />
+        <icon src="res/icon/android/drawable-hdpi-icon.png" platform="android" density="hdpi" />
+        <icon src="res/icon/android/drawable-xhdpi-icon.png" platform="android" density="xhdpi" />
+        <icon src="res/icon/android/drawable-xxhdpi-icon.png" platform="android" density="xxhdpi" />
+        <icon src="res/icon/android/drawable-xxxhdpi-icon.png" platform="android" density="xxxhdpi" />
+
+        
+        <splash src="res/screen/android/drawable-port-mdpi-screen.png" platform="android" density="port-mdpi" />
+        <splash src="res/screen/android/drawable-port-hdpi-screen.png" platform="android" density="port-hdpi" />
+        <splash src="res/screen/android/drawable-port-xhdpi-screen.png" platform="android" density="port-xhdpi" />
+        <splash src="res/screen/android/drawable-port-xxhdpi-screen.png" platform="android" density="port-xxhdpi" />
+        <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png" platform="android" density="port-xxxhdpi" />
+        
+    </platform>
+    
+    <platform name="ios">
+        <icon src="res/icon/ios/icon.png" platform="ios" width="57" height="57" />
+        <icon src="res/icon/ios/icon@2x.png" platform="ios" width="114" height="114" />
+        <icon src="res/icon/ios/icon-40.png" platform="ios" width="40" height="40" />
+        <icon src="res/icon/ios/icon-40@2x.png" platform="ios" width="80" height="80" />
+        
+        <icon src="res/icon/ios/icon-50.png" platform="ios" width="50" height="50" />
+        <icon src="res/icon/ios/icon-50@2x.png" platform="ios" width="100" height="100" />
+        <icon src="res/icon/ios/icon-60.png" platform="ios" width="60" height="60" />
+        <icon src="res/icon/ios/icon-60@2x.png" platform="ios" width="120" height="120" />
+        <icon src="res/icon/ios/icon-60@3x.png" platform="ios" width="180" height="180" />
+        <icon src="res/icon/ios/icon-72.png" platform="ios" width="72" height="72" />
+        <icon src="res/icon/ios/icon-72@2x.png" platform="ios" width="144" height="144" />
+        <icon src="res/icon/ios/icon-76.png" platform="ios" width="76" height="76" />
+        <icon src="res/icon/ios/icon-76@2x.png" platform="ios" width="152" height="152" />
+        <icon src="res/icon/ios/icon-small.png" platform="ios" width="29" height="29" />
+        <icon src="res/icon/ios/icon-small@2x.png" platform="ios" width="58" height="58" />
+        
+        <splash src="res/screen/ios/Default@2x~iphone.png" platform="ios" width="640" height="960" />
+        <splash src="res/screen/ios/Default~iphone.png" platform="ios" width="320" height="480" />
+        <splash src="res/screen/ios/Default-568h@2x~iphone.png" platform="ios" width="640" height="1136" />
+        <splash src="res/screen/ios/Default-667h.png" platform="ios" width="750" height="1334" />
+		<splash src="res/screen/ios/Default-736h.png" platform="ios" width="1242" height="2208" />
+        <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" platform="ios" width="1536" height="2048" />
+        <splash src="res/screen/ios/Default-Portrait~ipad.png" platform="ios" width="768" height="1024" />
+    </platform>
+
+
+    <access origin="*"/>
+    <access launch-external="yes" origin="market:*"/>
+    <access launch-external="yes" origin="itms:*"/>
+    <access launch-external="yes" origin="itms-apps:*"/>
+	<access launch-external="yes" origin="whatsapp:*"/>
+	<access launch-external="yes" origin="viber:*"/>
+	<access launch-external="yes" origin="tg:*"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+	<allow-intent href="whatsapp:*" />
+	<allow-intent href="viber:*" />
+	<allow-intent href="tg:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+		<allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+	</platform>
+
+ 
+	<config-file platform="ios" parent="CFBundleAllowMixedLocalizations">
+	  <true/>        
+	</config-file>
+	  <config-file platform="ios" target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <array>
+                <string>whatsapp</string>
+				<string>viber</string>
+				<string>tg</string>
+            </array>
+        </config-file>	
+</widget>

@@ -1,0 +1,3 @@
+module.exports = { "offer":
+{"id":"987","name":"Trendy aroma for new season","body":"Lorem ipsum dolor sit amet, nam ne nullam phaedrum consequat. Fugit ullum argumentum","system_date_to":"2022-03-31","discount_size":"3 percent","img":"img/demo/perfume_logo1.jpg","metakeywords":"","pr_cat":"1","exclusive":"0","modify_date":"1498164303","add_info":"Some additional info","can_complain":"1","sec_system_name":"offers","sec_name":"Offers","category":"121","cat_name":"","special_attribute":null,"advertiser_id":"25","advertiser":"Aroma world","email":"mail@aromaworld.biz","weblink1":"","weblink2":"","event_datetime":null,"address_info":[],"images":["img/demo/perfume1.jpg", "img/demo/perfume2.jpg" ]}
+};

@@ -1,0 +1,59 @@
+
+    <div class="swiper-container"> 
+        
+        <div class="swiper-wrapper">
+        
+            {{#each images}}
+            <div class="swiper-slide srf-offer-swiper-container">
+                <img class="srf-offer-main-image" src="{{this}}" alt="Image not available">
+               
+            </div>
+            {{/each}}
+            
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+ 
+    </div>
+    
+    <div class="content-block srf-offer-description">
+      <div class="content-block-inner">
+       
+       {{body}}
+       
+    
+        <div class="srf-contact-block">
+    <div class="offer-page-linkitems">
+      {{#if email}}
+          <span class="offer-page-linkitem email"><a class="link external" href="mailto:{{email}}"><i class="icon-envelope"></i> {{email}}</a></span>
+      {{/if}}
+       {{#if weblink1}}
+        <span class="offer-page-linkitem weblink1"><a class="link external open-inappbrowser" data-href="{{weblink1}}"><i class="icon-sphere"></i> {{weblink1}}</a></span>
+       {{/if}}
+       {{#if weblink2}}
+      <span class="offer-page-linkitem weblink2"><a class="link external open-inappbrowser" data-href="{{weblink2}}"><i class="icon-sphere"></i> {{weblink2}}</a></span>
+      {{/if}}
+    </div>
+    {{#each address_info}}
+    <p>      
+      {{#if phone}}
+          <span class="phone"><a href="tel:{{phone}}" class="link external"><i class="icon-phone"></i> {{phone}}</a></span><br/>
+      {{/if}}
+      {{#if address}}    
+        <span class="address">{{address}}</span><br/>
+        <span class="offer-page-workhours">Work hours: {{workhours}}</span>
+      {{/if}}
+        
+    </p>        
+    {{/each}}    
+        </div>
+    
+    
+       
+       <span class="legal-offer-notice"> {{add_info}}</span>
+       {{#js_compare "this.can_complain > 0"}}
+                <p><a href="complain.html" id="btn-complain" class="button button-big color-red"><i class="icon-exclamation-circle"></i>&nbsp;&nbsp;Report a problem</a></p>
+           {{/js_compare}}
+      </div>
+    </div>

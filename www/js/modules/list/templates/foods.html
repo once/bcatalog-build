@@ -1,0 +1,33 @@
+<li data-id="{{id}}" data-index="{{@index}}" class="swipeout {{pr_class}}">
+    <div class="swipeout-content">
+        <a href="offer_item.html?type=foods&amp;id={{id}}" class="item-link item-content">
+            <div class="item-media">
+                <img class="srf-offerlist-image lazy lazy-fadein" data-src="{{img}}" >
+            </div>
+            <div class="item-inner">
+                <div class="item-title-row">
+                    {{name}}
+                </div>
+                <div class="item-subtitle">
+                {{#js_compare "(this.price_old > 0)"}}
+                    <span class="food-oldprice-list">{{price_old}} $</i></span>
+                {{/js_compare}}
+                {{#if price_new}}
+                    <span class="food-newprice-list">{{price_new}} $</span>
+                {{/if}}
+                {{#if discount_size}}
+                    <span class="offer-percent-list">{{discount_size}}</span>
+                {{/if}}
+                {{#js_compare "this.exclusive != 0"}}<br/><span class="offer-exclusive">Exclusive</span>{{/js_compare}}
+                </div>
+                <div class="item-text"><span class="offer-advertiser-text">{{advertiser}}</span>.
+                {{#js_compare "(this.system_date_from) && (this.system_date_to)"}}
+                    <span class="offer-time-text">From {{rusdate_noyear system_date_from}} to {{rusdate_noyear system_date_to}}</span>
+                {{/js_compare}}
+            </div>
+            </div>
+        </a>
+    </div>
+    
+
+</li>

@@ -1,0 +1,26 @@
+<ul>
+                {{#each this}}
+                <li>
+                    <a href="#" data-id="{{id}}" data-name="{{name}}" class="category-link item-link close-popup" >
+                        <div class="item-content">
+                            {{#if icon}}<div class="item-media fa-correct"><i class="{{icon}}"></i></div>{{/if}}
+                            {{#if img}}<div class="item-media"><img onerror="this.style.display='none';" class="food-advertiser-logo" src="{{img}}"/></div>{{/if}}
+                            <div class="item-inner">
+                                <div class="item-title">{{name}}</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{else}}
+                 <li>
+                    <a href="#" class="item-link close-popup" >
+                        <div class="item-content">
+                            <div class="item-media fa-correct"><i class="icon-frown-o"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">No categories found</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
